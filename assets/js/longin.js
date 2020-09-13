@@ -41,7 +41,7 @@ $(function () {
         //2.阻止默认行为
         e.preventDefault()
         //3.获取表单数据  获取：username
-        var username = $('reg-box input [name=username] ').val()
+        // var username = $('reg-box input [name=username] ').val()
         var username = $('#reg-username').val()
         var password = $('#reg-psd').val()
         //4.看接口文档 发送ajax
@@ -70,13 +70,13 @@ $(function () {
         $.post('/api/login', formdata, function (res) {
             if (res.status === 0) {
                 //跳转
-                window.location = '/index.html'
+                window.location.href = '/index.html'
                 // token(令牌)  场景：当要去请求有权限（）要求的接口时-  --- TODO 看接口文档
                 //     // console.log(res.token)
                 //     // if(res.token.length!==0){
                 //     //   window.localStorage.setItem('token', res.token)
                 //     // }
-                res.token, length !== 0 &&
+                res.token.length !== 0 &&
                     window.localStorage.setItem('token', res.token)
             }
             layui.layuer.msg(res.message)

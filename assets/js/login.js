@@ -1,19 +1,19 @@
 // $(function () {
-// link-login
-// $('#link-login').on('click', function () {
-//   $('.login-box').hide()
-//   $('.reg-box').show()
-// })
+//   // link-login
+//   $('#link-login').on('click', function () {
+//     $('.login-box').hide()
+//     $('.reg-box').show()
+//   })
 
-// // link-reg
-// $('#link-reg').on('click', function () {
-//   $('.reg-box').hide()
-//   $('.login-box').show()
-// })
+//   // link-reg
+//   $('#link-reg').on('click', function () {
+//     $('.reg-box').hide()
+//     $('.login-box').show()
+//   })
 
-// 自定义规则
-// window.$
-// var form = window.layui.form
+//   // 自定义规则
+//   // window.$
+//   // var form = window.layui.form
 
 //   layui.form.verify({
 //     //LayUI的验证写法有二
@@ -37,7 +37,7 @@
 
 //   // 1. 绑定submit事件
 
-//   $('#btn-reg').submit(function (e) {
+// $('#btn-reg').submit(function (e) {
 //     // 2. 阻止默认行为
 //     e.preventDefault()
 //     // 3. 获取表单数据
@@ -47,36 +47,36 @@
 //     // 4. 看接口文档 发送ajax
 //     // 项目的请求根路径为 http://ajax.frontend.itheima.net
 //     var formdata = {
-//       username: username,
-//       password: password,
+//         username: username,
+//         password: password,
 //     }
 //     $.post('/api/reguser', formdata, function (res) {
-//       // 5. 处理res响应
-//       // 请求是否成功，0：成功；1：失败
-//       if (res.status === 0) {
-//         $('#link-reg').click()
-//       }
+//         // 5. 处理res响应
+//         // 请求是否成功，0：成功；1：失败
+//         if (res.status === 0) {
+//             $('#link-reg').click()
+//         }
 
-//       // 进入登录页面index.html
-//       // window.location.href="/index.html"
+//         // 进入登录页面index.html
+//         // window.location.href="/index.html"
 
-//       layui.layer.msg(res.message)
+//         layui.layer.msg(res.message)
 //     })
-//   })
+// })
 
-// login请求
+//   // login请求
 //   $('#btn-login').submit(function (e) {
 //     e.preventDefault()
 //     var formdata = $(this).serialize()
-// $.post('/api/login', formdata, function (res) {
-//   if (res.status === 0) {
-//     // 跳转
-//     window.location.href = '/index.html'
-//     // token(令牌)  场景：当要去请求有权限（）要求的接口时-  --- TODO 看接口文档
-//     // console.log(res.token)
-//     // if(res.token.length!==0){
-//     //   window.localStorage.setItem('token', res.token)
-//     // }
+//     $.post('/api/login', formdata, function (res) {
+//       if (res.status === 0) {
+//         // 跳转
+//         window.location.href = '/index.html'
+//         // token(令牌)  场景：当要去请求有权限（）要求的接口时-  --- TODO 看接口文档
+//         // console.log(res.token)
+//         // if(res.token.length!==0){
+//         //   window.localStorage.setItem('token', res.token)
+//         // }
 //         res.token.length !== 0 &&
 //           window.localStorage.setItem('token', res.token)
 //       }
@@ -85,6 +85,6 @@
 //   })
 // })
 
-// function==>
-// 1. 形参-> 默认形参-> (e)
-// 2. 返回值-> return -> var 变量 = fn()
+// // function==>
+// // 1. 形参-> 默认形参-> (e)
+// // 2. 返回值-> return -> var 变量 = fn()
